@@ -67,7 +67,8 @@ export const Contactus = () => {
 
         setLoading(true);
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_USER_ID')
+        emailjs
+            .sendForm('service_oputy2w', 'template_pow1icq', e.target, 'aWvYs68OVYaD76bn2')
             .then((result) => {
                 console.log('Email successfully sent!', result.text);
                 setLoading(false);
